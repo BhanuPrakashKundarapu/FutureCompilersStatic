@@ -1,0 +1,103 @@
+#homepage {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background-image: url('https://t4.ftcdn.net/jpg/04/83/79/63/360_F_483796317_C6dTm2h6oeGyWY6CJwaCUD8O4B6IaSY6.jpg'); */
+    /* background-color: url('./images/left\ side\ a\ graduate\ with\ graduation\ apron\ holding\ laptop\ and\ right\ side\ a\ text\ like\ FUTURE\ COMPILERS.png') !important; */
+  background-image: url('./images/bannerrrr.jpg');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add some padding for responsiveness */
+  }
+  @media screen and (max-width: 768px) {
+    #homepage {
+      font-size: 18px;
+    height: 70vh;
+    /* Adjust font size for tablets */
+    }
+    
+  }
+  .container {
+    color: white;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .h1-2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #homepage p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .buttons .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    #homepage {
+      font-size: 18px; /* Adjust font size for tablets */
+    }
+  
+    .h1-2 {
+      font-size: 2rem; /* Smaller heading on tablets */
+    }
+  
+    #homepage p {
+      font-size: 1rem; /* Smaller paragraph text */
+    }
+  
+    .buttons {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #homepage {
+      font-size: 16px; /* Adjust font size for mobile */
+    }
+  
+    .h1-2 {
+      font-size: 1.5rem; /* Further reduce heading size */
+    }
+  
+    #homepage p {
+      font-size: 0.9rem; /* Further reduce paragraph text */
+    }
+  
+    .buttons .btn {
+      font-size: 0.9rem; /* Adjust button text size */
+      padding: 8px 16px; /* Smaller buttons on mobile */
+    }
+  }

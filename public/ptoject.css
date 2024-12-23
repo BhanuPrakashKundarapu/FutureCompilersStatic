@@ -1,7 +1,13 @@
+/* services */
 .nav-size {
   font-size: 20px;
 }
-
+/* whychooseus */
+.icons-logo {
+  width: 100%;  /* Makes the image responsive */
+  height: auto; /* Maintains the aspect ratio */
+  max-width: 200px; /* Optional: Limits the image size to a maximum width */
+}
 .nav-s {
   padding-left: 20px;
 }
@@ -9,7 +15,8 @@
 #homepage {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url('https://t4.ftcdn.net/jpg/04/83/79/63/360_F_483796317_C6dTm2h6oeGyWY6CJwaCUD8O4B6IaSY6.jpg');
+  background-image: url('./images/bannerrrr.jpg');
+  /* background-image: url('https://t4.ftcdn.net/jpg/04/83/79/63/360_F_483796317_C6dTm2h6oeGyWY6CJwaCUD8O4B6IaSY6.jpg'); */
   /* Replace with your image URL */
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,9 +26,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
 }
-
+/* card-aboutus */
 .container {
   text-align: center;
   padding: 20px;
@@ -98,7 +105,9 @@ p {
   color: white;
 }
 
-/* Card Container Styles */
+
+
+/* Card Container Styles
 .card-aboutus {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -108,7 +117,7 @@ p {
   padding: 20px;
 }
 
-/* Adjusted Alignment for 3 and 2 Cards */
+Adjusted Alignment for 3 and 2 Cards
 .card-aboutus {
   display: grid;
   grid-template-rows: auto auto;
@@ -123,6 +132,78 @@ p {
   grid-column: span 1;
   justify-self: center;
 }
+
+@media (max-width: 768px) {
+  .card-aboutus {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-aboutus {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  .card {
+    width: 22rem;
+  }
+} */
+
+/* Card Container Styles */
+.card-aboutus {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row on large screens */
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Responsive Styles */
+
+
+/* Small Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .card-aboutus {
+    grid-template-columns: 2fr; /* 1 card per row */
+  }
+
+  .card {
+    width: 80%; /* Card takes 80% of the screen width */
+    margin: 0 auto; /* Center the card */
+  }
+}
+
+/* Medium Screens (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-aboutus {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    justify-content: center;
+  }
+
+  .card {
+    width: 22rem; /* Adjust card width for medium screens */
+  }
+}
+
+/* Large Screens (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .card-aboutus {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  }
+
+  .card {
+    width: 22rem; /* Consistent width for large screens */
+  }
+}
+
+
 
 /* Card Styles */
 .card {
@@ -183,27 +264,7 @@ p {
   gap: 10px;
 }
 
-@media (max-width: 768px) {
-  .card-aboutus {
-    grid-template-columns: 1fr;
-  }
 
-  .card {
-    width: 95%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .card-aboutus {
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-  }
-
-  .card {
-    width: 22rem;
-  }
-}
 
 #services {
   background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2pvYjEzNjItYmctMDdfMS5qcGc.jpg");
@@ -385,6 +446,7 @@ p {
   }
 }
 @media (min-width: 769px) {
+  
   .container {
       flex-direction: row; 
       justify-content: space-between; 
@@ -419,6 +481,13 @@ p {
       width: 20%; 
       justify-content: center;
       align-items: center;
+  }
+  
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+  body {
+    background-color: yellow;
   }
 }
 /* Basic styling for the section */
@@ -777,3 +846,78 @@ button.submit-btn:hover {
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 80%);
   backdrop-filter: blur(10px);
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+.grid-container {
+  display: grid;
+  gap: 16px; /* Adjust the gap between grid items */
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 16px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Large screens: 3 items per row */
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Medium screens: 2 items per row */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screens: 1 item per row */
+@media (min-width:250px) and (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Space between grid items */
+  padding: 20px;
+}
+.grid-item {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Space between children */
+  height: 100%; /* Make items take full height */
+  text-align: center;
+}
+.card-img-top {
+  width: 100%; /* Make image take full width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Set a max height for images */
+  object-fit: contain; /* Cover the area without distortion */
+}
+.card-body {
+  padding: 10px; /* Padding for card body */
+  flex-grow: 1; /* Allow card body to grow */
+}
+
+
+

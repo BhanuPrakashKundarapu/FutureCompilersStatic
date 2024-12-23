@@ -4,7 +4,6 @@
 function toggleSyllabus(id) {
     const syllabus = document.getElementById(id);
     syllabus.classList.toggle("show");
-    window.alert("hello world");
   }
   
   document

@@ -1,0 +1,51 @@
+/* General styling for the about-us section */
+.about-us {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling for the heading */
+  .h1-1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Styling for paragraphs */
+  .about-us p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  /* Hide the second paragraph by default */
+  .hidden-text {
+    display: none;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .h1-1 {
+      font-size: 2rem; /* Smaller heading on smaller screens */
+    }
+  
+    .about-us p {
+      font-size: 1rem; /* Smaller text for better readability on small screens */
+    }
+    
+    .about-us {
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .h1-1 {
+      font-size: 1.5rem; /* Further reduce heading size on very small screens */
+    }
+  
+    .about-us p {
+      font-size: 0.9rem; /* Further reduce paragraph text size */
+    }
+  }
+  
